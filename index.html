@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Belanja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Daftar Belanja Online</h1>
+    <div class="info">
+        <p>Website ini adalah daftar belanja online yang memungkinkan kita untuk menyimpan daftar belanja dengan mudah dan cepat. <br> Mohon diperhatikan, menutup website akan menghapus seluruh daftar belanja secara otomatis.</p>
+    </div>
+
+
+    <div class="app-container">
+        <div class="input-area">
+            <input type="text" id="productName" placeholder="Nama Produk" required>
+            <input type="number" id="productPrice" placeholder="Harga Produk" required>
+            <input type="text" id="productCategory" placeholder="Kategori Produk" required>
+            <button id="addButton" onclick="addProduct()">Tambah Produk</button>
+        </div>
+
+        <div class="filter-area">
+            <input type="text" id="filterCategory" placeholder="Filter Kategori">
+            <button id="filterButton" onclick="filterProduct()">Filter</button>
+            <button id="resetFilterButton" onclick="resetFilter()">Reset</button>
+        </div>
+
+        <div id="productContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

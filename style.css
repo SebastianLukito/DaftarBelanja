@@ -1,0 +1,194 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff398;
+    color: #333;
+}
+
+.info {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    background-color: white;
+    color: black;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+p {
+    background-color: rgb(51, 18, 18);
+    color: white;
+}
+
+h1, p {
+    margin-block: 0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.app-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.input-area {
+    background-color: rgb(84, 84, 84);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-area input[type="text"],
+.input-area input[type="number"] {
+    flex: 1 1 200px;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-area button {
+    padding: 10px 20px;
+    background-color: #fff398;
+    color: rgb(6, 6, 6);
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-area button:hover {
+    color: white;
+    background-color: #653c07;
+}
+
+#productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 10px;
+    width: calc(33% - 20px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.product h2, .product p {
+    margin: 5px;
+    margin-inline: 2px;
+}
+
+@media (max-width: 768px) {
+    .product {
+        width: calc(50% - 20px);
+    }
+}
+
+.product-buttons {
+    margin-top: 10px;
+}
+
+.product-buttons button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    margin-block: 5px;
+    width: 100px;
+    background-color: #fff398;
+    color: rgb(6, 6, 6);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-buttons button:hover {
+    background-color: #0b0b0b;
+    color: white;
+}
+
+.filter-area {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-area input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.filter-area button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #fff398;
+    color: rgb(6, 6, 6);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-area button:hover {
+    background-color: #0056b3;
+}
+
+.filter-area button:focus {
+    outline: none;
+}
+
+.product-note {
+    width: 80%;
+    height: 5%;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-family: 'Arial', sans-serif; /* Menjaga konsistensi font */
+    margin-inline: 10px;
+}
+
+.product-note:focus {
+    border-color: #653c07;
+    outline: none; /* Menghilangkan garis fokus standar */
+}
+
+
+@media (max-width: 400px) {
+    .input-area {
+        flex-direction: column;
+    }
+
+    .input-area input[type="text"],
+    .input-area input[type="number"] {
+        flex: 1 1 auto;
+    }
+}
